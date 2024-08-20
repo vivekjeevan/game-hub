@@ -14,7 +14,7 @@ const Ratings = ({ ratings }: Props) => {
   return (
     <>
       <HStack marginTop={4}>
-        {[...Array(ratings)].map((i) => (
+        {[...Array(ratings)].map((e, i) => (
           <Icon key={i} as={FaStar} color="gold" />
         ))}
       </HStack>
